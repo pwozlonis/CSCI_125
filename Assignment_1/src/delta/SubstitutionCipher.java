@@ -11,7 +11,7 @@ public class SubstitutionCipher implements MessageEncoder {
 	@Override
 	public String encode(String plaintext) {
 		String encoded="";
-		for(int i=0; i<PlainText.length()i++{
+		for(int i=0; i<PlainText.length();i++{
 			char x = plainText.charAt(i);
 			x = shiftCharacter(x);
 			encoded = encoded+x;
@@ -23,7 +23,7 @@ public class SubstitutionCipher implements MessageEncoder {
 	@Override
 	public String decode(String plainText) {
 		String decoded ="";
-		for(int i=0; i<PlainText.length();i++{
+		for(int i=0; i<plainText.length();i++{
 			char x = plainText.charAt(i);
 			x=reverseShiftCharacter(x); 
 			decoded=decoded+x;
