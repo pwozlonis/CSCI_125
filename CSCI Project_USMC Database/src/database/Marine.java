@@ -19,6 +19,10 @@ public class Marine {
 		
 		System.out.print("Enter new Marine's first name:  ");
 		this.firstName = in.nextLine();
+
+		//Show Status
+		System.out.print("Is Marine Active(true or false)");
+		this.dutyStatus = in.nextBoolean();
 		
 		// Show Rank
 		System.out.print("\n1 - Private\n2 - Private First Class\n3 - Lance Corpral\n4 - Corpral\n5 - Sergeant\n6 - Staff Sergeant\n7 - Gunnery Sergeant\n8 - First Sergeant\nEnter new Marine's rank grade:  ");
@@ -53,7 +57,7 @@ public class Marine {
 			
 		setedipi();
 	
-		System.out.println( rank + " " + "| Name: " + lastName + " " + ", " + firstName + " " + "| EDIPI:" + edipi);
+		System.out.println( rank + " " + "| Name: " + lastName + " " + ", " + firstName + " " + "| EDIPI:" + edipi + " | Active Duty Status: " + dutyStatus);
 		
 	}
 	
