@@ -2,11 +2,19 @@ package delta;
 
 public abstract class PayCalculator {
 
-BigDecimal payRate;
+	private double payRate;
 	
-	public PayCalculator(BigDecimal payRate) {
+	public double computepay(double hours) {
+		return hours*payRate;
+	}
+	public PayCalculator(double theRate)  {
+		payRate=theRate;
+	}
+	public double computeRate() {
+		return payRate;
+	}
+	public void setPayRate(double payRate) {
 		this.payRate = payRate;
 	}
-	public abstract BigDecimal computePay(float hour);
-
+	
 }

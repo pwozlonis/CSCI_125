@@ -1,10 +1,11 @@
 package delta;
 
-public class HazardPay {
+public class HazardPay extends MyPayCalculator {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public HazardPay(double theRate) {
+		super(theRate);
 	}
-
+	public double computePay(double hours) {
+		return super.computepay(hours)*1.5;
+	}
 }

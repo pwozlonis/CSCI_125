@@ -1,10 +1,8 @@
 package delta;
 
-public class RegularPay {
+public class RegularPay extends PayCalculator {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public RegularPay(double payRate) {
+		super(theRate);
+		}
 	}
-
-}
